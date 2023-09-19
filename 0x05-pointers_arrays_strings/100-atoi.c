@@ -48,11 +48,11 @@ int find_sign(char *s)
 	while (i < (idx_num_starts(s)))
 	{
 	if (s[i++] == '-')
-		negatives++;}
+	negatives++;}
 	}
 
 	if (negatives % 2 != 0)
-		sign = -1;
+	sign = -1;
 										
 	return (sign);
 	}
