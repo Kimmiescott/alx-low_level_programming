@@ -41,28 +41,7 @@ int idx_num_starts(char *s)
  * @s: integer
  * Return: integer 1 or -1
  */
-						
-int find_sign(char *s)
-{
-	int negatives = 0, i = 0, sign = 1;
-
-	while (i < (idx_num_starts(s)))
-	{
-		if (s[i++] == '-')
-		negatives++;
-	}
-
-	if (negatives % 2 != 0)
-	sign = -1;
-
-	return (sign);
-}
-
-/**
- * find_sign - determine if integer is negative
- * @s: integer
- * Return: integer 1 or -1
- */
+					
 int find_sign(char *s)
 {
 	int negatives = 0, i = 0, sign = 1;
