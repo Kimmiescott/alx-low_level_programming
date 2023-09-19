@@ -55,7 +55,8 @@ int find_sign(char *s)
 	sign = -1;
 										
 	return (sign);
-}	
+}
+
 /**              
  *_atoi - convert string to int
  * @s: string to convert
