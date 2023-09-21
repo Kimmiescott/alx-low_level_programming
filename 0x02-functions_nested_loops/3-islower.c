@@ -1,25 +1,20 @@
-#include <stdio.h>
+lude "main.h"
 
 /**
- * main - print sum of multiples of 3 or 5 below 1024
- * Return: 0
+ * _islower - checks for lowercase character
+ * @c: character to check
+ * Return: 1 if lowercase, 0 if uppercase
  */
 
-int main(void)
+int _islower(int c)
 {
-        int n;
-	int sum;
-
-	sum = 0;
-
-	for (n = 0; n < 1024; n++)
+	if (c >= 'a' && c <= 'z')
 	{
-		if ((n % 3 == 0) || (n % 5 == 0))
-													                {
-																sum += n;
-															}
+	return (1);
 	}
-	printf("%d\n", sum);
-
-	return (0);
+	else
+		{
+		return (0);
+		}
+		_putchar('\n');
 }

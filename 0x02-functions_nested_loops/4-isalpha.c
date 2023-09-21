@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
  * _isalpha - checks for alphabet character
@@ -13,8 +13,8 @@ int _isalpha(int c)
 		return (1);
 	}
 	else
-	{
+		{
 		return (0);
-	}
+		}
 	_putchar('\n');
 }
