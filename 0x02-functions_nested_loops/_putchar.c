@@ -1,3 +1,4 @@
+#include <main.h>
 #include <unistad.h>
 /**
  * _putchar . writes the character c to stdout
