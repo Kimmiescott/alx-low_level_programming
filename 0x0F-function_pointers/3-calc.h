@@ -1,5 +1,5 @@
 #ifndef PROTOTYPES
-#define PROTYPES
+#define PROTOYPES
 
 /**
  * struct op - Struct op
