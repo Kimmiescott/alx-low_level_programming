@@ -1,91 +1,105 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef _MAIN_H_
+#define _MAIN_H_
 
 /**
- *  * _putchar - puts character to standard output
- *   * @c: character to put to standard output
- *    */
+ * _putchar - writes the character c to stdout
+ * @c: The character to print
+ *
+ * Return: On success 1.
+ * On error, -1 is returned, and error is set appropriately.
+ */
 
 int _putchar(char c);
 
 /**
- *  * _memset - fill n bytes of memory with a constant value
- *   * @s: pointer to memory area
- *    * @b: constant value
- *     * @n: number of bytes to fill
- *      * Return: memory area
- *       */
+ * print_alphabet - print lowercase alphabet
+ */
 
-char *_memset(char *s, char b, unsigned int n);
+void print_alphabet(void);
+
 
 /**
- *  * _memcpy - copy n bytes of memory from source to destination
- *   * @dest: destination
- *    * @src: source
- *     * @n: number of bytes
- *      * Return: pointer to dest
- *       */
+ * print_alphabet_x10 - print lowercase alphabet ten times
+ */
 
-char *_memcpy(char *dest, char *src, unsigned int n);
+void print_alphabet_x10(void);
 
 /**
- *  * _strchr - locate 1st occurrence of character in string and returns pointer there
- *   * @s: string to search
- *    * @c: target characer
- *     * Return: pointer to that character in string
- *      */
+ * _islower - checks for lowercase
+ * @c: the character to check
+ * Return: int
+ */
 
-char *_strchr(char *s, char c);
-
-/**
- *  * _strspn - return length of string that matches values consistently
- *   * @s: string to search
- *    * @accept: target matches
- *     * Return: number of bytes consecutively matched
- *      */
-
-unsigned int _strspn(char *s, char *accept);
+int _islower(int c);
 
 /**
- *  * _strpbrk - return pointer to byte in s that matches a byte in accepted target
- *   * @s: string to search
- *    * @accept: target matches
- *     * Return: pointer to index of string at first occurence
- *      */
+ * _isalpha - checks for alphabet character
+ * @c: character to check
+ * Return: 1 if lower or uppercase, 0 if not alphabet character
+ */
 
-char *_strpbrk(char *s, char *accept);
-
-/**
- *  * _strstr - locate and return pointer to first occurence of substring
- *   * @haystack: string to search
- *    * @needle: target substring to search for
- *     * Return: pointer to index of string at first occurence of whole substring
- *      */
-
-char *_strstr(char *haystack, char *needle);
+int _isalpha(int c);
 
 /**
- *  * print_chessboard - print chessboard given set 2D array
- *   * @a: 2D array
- *    */
+ * print_sign - print sign of number
+ * @n: number to check
+ * Return: 1 if greater than 0, 0 if 0, -1 if less than 0
+ */
 
-void print_chessboard(char (*a)[8]);
-
-/**
- *  * print_diagsums - print sums of diagonals in matrix
- *   * @a: matrix
- *    * @size: size of matrix
- *     */
-
-void print_diagsums(int *a, int size);
+int print_sign(int n);
 
 /**
- *  * set_string - set value of pointer to a char
- *   * @s: variable of type pointer
- *    * @to: char
- *     */
+ * _abs - computer absolute value of integer
+ * @int: integer
+ * Return: absolute value
+ */
 
-void set_string(char **s, char *to);
+int _abs(int);
+
+/**
+ * print_last_digit - print last digit of integer
+ * @int: integer
+ * Return: last digit of number
+ */
+
+int print_last_digit(int);
+
+/**
+ * jack_bauer - print every minute of a day
+ * Description: print minutes 00:00 to 23:59
+ */
+
+void jack_bauer(void);
+
+
+/**
+ * times_table - print multiplication table
+ */
+
+void times_table(void);
+
+/**
+ * add - add two integers
+ * @a: first integer
+ * @b: second integer
+ * Return: sum
+ */
+
+int add(int a, int b);
+
+/**
+ * print_to_98 - print numbers n to 98
+ * @n: integer argument
+ */
+
+void print_to_98(int n);
+
+/**
+ * print_times_table - print multiplication table up to n
+ * @n: integer argument
+ */
+
+void print_times_table(int n);
 
 #endif
 
